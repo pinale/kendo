@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Adding Kendo UI for jQuery to an existing project</title>
+    
+        <!-- Reference to the selected SASS-based theme  -->
+        <link href="styles/kendo.default-v2.min.css" rel="stylesheet" />
+
+        <!-- (Optional) Reference to the RTL(Right-To-Left) CSS file that changes the direction of all Kendo UI widgets. Include this file only if your project will be with Right-To-Left webpage direction. -->
+        <link href="styles/kendo.rtl.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Reference to the jQuery library. It is important tha the jQuery file is loaded before the JavaScript file of Kendo UI -->
+        <script src="js/jquery.min.js"></script>
+
+        <!-- Reference to the Kendo UI JavaScript file -->
+        <script src="js/kendo.all.min.js"></script>
+
+  </head>
+  <body>
+    <input id="datepicker" />
+    <script>
+    $(function() {
+        // Initialize the Kendo UI DatePicker by calling the kendoDatePicker jQuery plugin
+        $("#datepicker").kendoDatePicker();
+    });
+    </script>
+  </body>
+</html>
